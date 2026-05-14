@@ -203,3 +203,9 @@ calibration_*.npy
 # Training logs
 args.yaml
 results.csv
+
+# Custom data directory (training datasets)
+data/
+
+# Test logs
+test_log/
