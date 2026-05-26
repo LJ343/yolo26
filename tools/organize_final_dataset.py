@@ -15,8 +15,8 @@ import cv2
 from tqdm import tqdm   # 新增导入
 
 # ================= 配置区域 =================
-SOURCE_DIR = "/home/jzyh/xbzl/traffic_light/0825"
-OUTPUT_DIR = "/home/jzyh/xbzl/traffic_light/data_v1_filtered"
+SOURCE_DIR = "/home/jzyh/xbzl/traffic_light/0825/0514"
+OUTPUT_DIR = "/home/jzyh/xbzl/traffic_light/data_v1_filtered_0514"
 
 TARGET_W, TARGET_H = 1920, 1536
 

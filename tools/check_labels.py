@@ -46,7 +46,7 @@ def draw_yolo_boxes(img_path, txt_path, out_path):
 # --- 请把下面这两个路径修改为你当前的真实文件 ---
 # 注意：img 的路径里是 images，txt 的路径里是 labels！
 
-test_img = "/home/jzyh/code/ultralytics/data/images/train/image_1756955056.png"  
-test_txt = "/home/jzyh/code/ultralytics/data/labels/train/image_1756955056.txt" 
+test_img = "/home/jzyh/xbzl/traffic_light/data_v1_filtered_augment_smartcrop/images/train/aug_agg_000008.jpg"  
+test_txt = "/home/jzyh/xbzl/traffic_light/data_v1_filtered_augment_smartcrop/labels/train/aug_agg_000008.txt" 
 
 draw_yolo_boxes(test_img, test_txt, "verify_check.jpg")

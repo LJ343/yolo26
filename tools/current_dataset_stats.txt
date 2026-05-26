@@ -1,22 +1,22 @@
-Traffic Light Dataset Statistics (Filtered 13 Classes)
+Traffic Light Dataset Statistics (Filtered 15 Classes)
 =================================================================
 ID   | Class Name           | Train      | Val        | Total     
 -----------------------------------------------------------------
-0    | round_red            | 14572      | 2592       | 17164     
-1    | round_yellow         | 1039       | 188        | 1227      
-2    | round_green          | 16383      | 2931       | 19314     
-3    | up_red               | 676        | 121        | 797       
-4    | up_yellow            | 34         | 9          | 43        
-5    | up_green             | 718        | 136        | 854       
-6    | left_red             | 8321       | 1515       | 9836      
-7    | left_yellow          | 327        | 60         | 387       
-8    | left_green           | 4437       | 751        | 5188      
-9    | right_red            | 359        | 57         | 416       
-10   | right_yellow         | 14         | 1          | 15        
-11   | right_green          | 1806       | 303        | 2109      
-12   | turn_around_red      | 0          | 0          | 0         
-13   | turn_around_yellow   | 0          | 0          | 0         
-14   | turn_around_green    | 26         | 5          | 31        
+0    | round_red            | 15850      | 2915       | 18765     
+1    | round_yellow         | 4587       | 207        | 4794      
+2    | round_green          | 18829      | 3280       | 22109     
+3    | up_red               | 3167       | 136        | 3303      
+4    | up_yellow            | 384        | 8          | 392       
+5    | up_green             | 6363       | 285        | 6648      
+6    | left_red             | 8699       | 1670       | 10369     
+7    | left_yellow          | 1658       | 65         | 1723      
+8    | left_green           | 7421       | 880        | 8301      
+9    | right_red            | 1560       | 71         | 1631      
+10   | right_yellow         | 224        | 3          | 227       
+11   | right_green          | 4508       | 359        | 4867      
+12   | turn_around_red      | 2733       | 109        | 2842      
+13   | turn_around_yellow   | 319        | 5          | 324       
+14   | turn_around_green    | 871        | 31         | 902       
 -----------------------------------------------------------------
-Total Annotations: Train=48712, Val=8669, All=57381
-Total Label Files Parsed: 24563
+Total Annotations: Train=77173, Val=10024, All=87197
+Total Label Files Parsed: 31966

@@ -13,7 +13,13 @@ python tools/copypaste_augment_v5.py \
     --data_dir /path/to/original_dataset \
     --output_dir /path/to/output \
     --augment "1:500,4:300,7:200"
-
+python tools/copypaste_augment.py \
+    --data_dir /home/jzyh/xbzl/traffic_light/data_v2_smartcrop \
+    --output_dir /home/jzyh/xbzl/traffic_light/data_v2_smartcrop_augment \
+    --base_count 16402 \
+    --ratios "1.0,0.2,1.0,0.15,0.015,0.25,1.0,0.08,0.35,0.08,0.007,0.2,0.12,0.015,0.04" \
+    --max_iou 0.0 \
+    --workers 0
 """
 
 import argparse

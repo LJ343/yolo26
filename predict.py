@@ -4,7 +4,7 @@ import os
 if __name__ == '__main__':
     # 1. 加载你刚刚训练出来的 last.pt 权重
     # 注意：如果你之前重新跑生成了 exp5，这里路径可能需要改成 exp5/weights/last.pt
-    weight_path = "runs/detect/26m/train/exp4/weights/best.pt" 
+    weight_path = "/home/jzyh/code/ultralytics/runs/detect/26m/train1/exp3/weights/epoch60.pt" 
     
     if not os.path.exists(weight_path):
         print(f"找不到权重文件: {weight_path}，请检查路径！")
@@ -28,4 +28,4 @@ if __name__ == '__main__':
         device='0'         # 推理只需要一张卡即可
     )
 
-    print("✅ 推理完成！请去 runs/detect/predict2/ 目录下查看画好框的可视化图片。")
+    print("✅ 推理完成！请去 runs/detect/predict3/ 目录下查看画好框的可视化图片。")

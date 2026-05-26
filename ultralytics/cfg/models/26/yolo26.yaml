@@ -6,7 +6,8 @@
 
 # Parameters
 # nc: 80 # number of classes
-nc: 12
+nc: 6  # number of shape classes (primary task): 0=unknown, 1=round, 2=up, 4=left, 5=right, 6=turn_around
+ex_nc: 5  # number of color classes (secondary task): 0=unknown, 2=red, 3=yellow, 4=green
 end2end: True # whether to use end-to-end mode
 reg_max: 1 # DFL bins
 scales: # model compound scaling constants, i.e. 'model=yolo26n.yaml' will call yolo26.yaml with scale 'n'
@@ -50,4 +51,4 @@ head:
   - [[-1, 10], 1, Concat, [1]] # cat head P5
   - [-1, 1, C3k2, [1024, True, 0.5, True]] # 22 (P5/32-large)
 
-  - [[16, 19, 22], 1, Detect, [nc]] # Detect(P3, P4, P5)
+  - [[16, 19, 22], 1, Detect26, [nc, ex_nc]] # Detect26(P3, P4, P5)

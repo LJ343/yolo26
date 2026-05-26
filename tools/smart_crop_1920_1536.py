@@ -18,7 +18,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 
 # ================= 配置区域 =================
 SOURCE_DIR = Path("/home/jzyh/xbzl/traffic_light/0825")
-OUTPUT_DIR = Path("/home/jzyh/xbzl/traffic_light/data_v1_filtered")
+OUTPUT_DIR = Path("/home/jzyh/xbzl/traffic_light/data_v2_smartcrop")
 
 TARGET_W, TARGET_H = 1920, 1536
 TARGET_RATIO = TARGET_W / TARGET_H  # 1.25
@@ -35,6 +35,13 @@ ORIGINAL_CLASSES = [
     "script_black", "script_red", "script_yellow", "script_green",
     "unknown"
 ]
+# ORIGINAL_CLASSES = [
+#     "round_red", "round_yellow", "round_green",
+#     "up_red", "up_yellow", "up_green",
+#     "left_red", "left_yellow", "left_green",
+#     "right_red", "right_yellow", "right_green",
+#     "turn_around_red", "turn_around_yellow", "turn_around_green"
+# ]
 
 KEEP_CLASSES = [
     "round_red", "round_yellow", "round_green",
@@ -228,7 +235,7 @@ def main():
     random.seed(42)
     random.shuffle(valid_pairs)
     
-    split_ratio = 0.85
+    split_ratio = 0.83
     split_idx = int(len(valid_pairs) * split_ratio)
     datasets = {
         "train": valid_pairs[:split_idx],

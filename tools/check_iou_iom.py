@@ -14,8 +14,8 @@ import shutil
 from pathlib import Path
 
 # ================= 配置区域 =================
-SOURCE_DIR = Path("/home/jzyh/xbzl/traffic_light/data_v1_filtered")
-OUTPUT_DIR = Path("/home/jzyh/xbzl/traffic_light/data_v1_ct")
+SOURCE_DIR = Path("/home/jzyh/xbzl/traffic_light/data_v1_filtered_0514")
+OUTPUT_DIR = Path("/home/jzyh/xbzl/traffic_light/data_v1_0514ct")
 OUTPUT_REPORT = "conflict_review_report.txt"  # 生成的审核报告名称
 
 IOU_THRESH = 0.9  # 重叠度阈值

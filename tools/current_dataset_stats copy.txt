@@ -1,0 +1,22 @@
+Traffic Light Dataset Statistics (Filtered 13 Classes)
+=================================================================
+ID   | Class Name           | Train      | Val        | Total     
+-----------------------------------------------------------------
+0    | round_red            | 14552      | 2591       | 17143     
+1    | round_yellow         | 1025       | 188        | 1213      
+2    | round_green          | 16365      | 2930       | 19295     
+3    | up_red               | 675        | 121        | 796       
+4    | up_yellow            | 34         | 9          | 43        
+5    | up_green             | 1416       | 260        | 1676      
+6    | left_red             | 8315       | 1509       | 9824      
+7    | left_yellow          | 323        | 59         | 382       
+8    | left_green           | 4424       | 750        | 5174      
+9    | right_red            | 359        | 57         | 416       
+10   | right_yellow         | 13         | 1          | 14        
+11   | right_green          | 1805       | 303        | 2108      
+12   | turn_around_red      | 543        | 98         | 641       
+13   | turn_around_yellow   | 26         | 1          | 27        
+14   | turn_around_green    | 149        | 30         | 179       
+-----------------------------------------------------------------
+Total Annotations: Train=50024, Val=8907, All=58931
+Total Label Files Parsed: 25388
